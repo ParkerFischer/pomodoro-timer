@@ -224,13 +224,12 @@ function Pomodoro() {
           </div>
         </div>
       </div>
-
-      {CurrentSession({
-        session,
-        secondsToDuration,
-        focusDuration,
-        breakDuration,
-      })}
+      <CurrentSession
+        session={session}
+        secondsToDuration={secondsToDuration}
+        focusDuration={focusDuration}
+        breakDuration={breakDuration}
+      />
     </div>
   );
 }
